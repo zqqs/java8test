@@ -23,10 +23,10 @@ public class ZhangXueYouProxy {
                     System.out.println("我是他的经纪人，要唱歌先给100000块钱");
                     return method.invoke(zxy,args);//调用代理人的真实唱歌方法
                 }
-                if(method.getName().equals("dance")){
+                if(method.getName().equals("dance")) {
                     //跳舞方法
                     System.out.println("我是他的经纪人，要跳舞先给100000块钱");
-                    return method.invoke(zxy,args);//调用代理人的真实跳舞方法
+                    return method.invoke(zxy, args);//调用代理人的真实跳舞方法
                 }
                 return null;
             }
